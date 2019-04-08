@@ -49,7 +49,7 @@
 	$body = "From: $name\nE-Mail: $email\n\nMessage:\n$message";
 
 	$headers = "From: ".$from;
-
+	
 
 	//send the email
 	$result = '';
