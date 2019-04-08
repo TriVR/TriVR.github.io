@@ -43,10 +43,10 @@
 	$email = $_POST['email'];
 	$message = $_POST['message'];
 	$from = $email;
-	$to = 'info@example.com';  // please change this email id
-	$subject = 'Contact Form : Titan - The best downloaded template ever';
+	$to = 'achievr2019@gmail.com';  // please change this email id
+	$subject = 'Contact Form from TriVR Website';
 
-	$body = "From: $name\n E-Mail: $email\n Message:\n $message";
+	$body = "From: $name\nE-Mail: $email\n\nMessage:\n$message";
 
 	$headers = "From: ".$from;
 
@@ -56,7 +56,7 @@
 	if (mail ($to, $subject, $body, $headers)) {
 		$result .= '<div class="alert alert-success alert-dismissible" role="alert">';
  		$result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-		$result .= 'Thank You! I will be in touch';
+		$result .= 'Thank You! We will be in touch soon';
 		$result .= '</div>';
 
 		echo $result;
